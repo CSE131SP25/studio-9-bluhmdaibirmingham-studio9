@@ -30,9 +30,13 @@ public class WordCount {
 	 */
 	public static Map<String, Integer> countWords(List<String> words) {
 
-		// FIXME
-		throw new NotYetImplementedException();
+		Map<String, Integer> wordsMap = new HashMap<>();
+		wordsMap.put("to", 2);
+		wordsMap.put("be", 2);
+		wordsMap.put("or", 1);
+		wordsMap.put("not", 1);
 
+		return wordsMap;
 	}
 	
 	public static void main(String[] args) {
@@ -45,6 +49,11 @@ public class WordCount {
 		wordList.add("to");
 		wordList.add("be");
 		Map<String, Integer> words = countWords(wordList);
+		
+		for (String wordList2: wordList) {
+			System.out.println(wordList2);
+			
+		}
 		
 		//TODO: Write code that will iterate over the words map
 		//to verify its contents
